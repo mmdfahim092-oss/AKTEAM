@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js" async=""></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js" async=""></script>
+</head>
+
+<body>
+  <div id="__OWNER_Emon__" data-owner="@owner_Emon"
+    style="position:absolute;left:-9999px;top:-9999px;opacity:0;pointer-events:none;">
+    <div>@owner_Emon</div>
+    <div>এই কোডের মালিক ওনার ইমন তোর বাপ</div>
+    <div>তোর বাপের এই ওয়েবসাইট দিয়ে এই কোড এনক্রিপ্ট করা হয়েছে</div>
+    <div>খানকীর পোলা তোরে চুদমু তোর মারে চুদমু তুই তোর বাপের কোড চুরি করতে আইছোত তোর babar নাম ইমন খানকীর পোলা</div>
+  </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>𖣘 ATIK BHAI 𖣘</title>
+  <meta name="creator" content="GURU BHAI">
+  <meta name="license" content="https://t.me/ENRVIPCOMUNITY">
+  <style>
+    * {
+      -webkit-user-select: none !important;
+      -moz-user-select: none !important;
+      user-select: none !important;
+      box-sizing: border-box;
+      touch-action: none;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+      background: #000;
+      font-family: 'Arial Black', sans-serif;
+    }
+
+    iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      z-index: 1;
+    }
+
+    :root {
+      --pro-red: #FFD700;
+      --pro-cyan: #00FF00;
+      --pro-gold: White;
+      --pro-purple: #FFFF00;
+      --bg-dark: #87CEEB;
+    }
+
+    /* =========================================================
+           QUANTUM HUD V3 — VISUAL UPGRADE
+        ========================================================= */
+
+    #core {
+      --hud: #00f7ff;
+      --hud2: #7c3cff;
+      --danger: #ff1744;
+      --success: #00ff88;
+      --hud-size: 250px;
+
+      position: fixed;
+      right: 20px;
+      bottom: 120px;
+      width: 230px;
+      z-index: 99999;
+      cursor: move;
+      isolation: isolate;
+      filter: drop-shadow(0 0 18px rgba(0, 255, 255, .22));
+      animation: coreFloat 3s ease-in-out infinite;
+      transform-origin: center;
+      perspective: 900px;
+    }
+
+    @keyframes coreFloat {
+
+      0%,
+      100% {
+        transform: translateY(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(-5px) scale(1.015);
+      }
+    }
+
+    /* ---------- ENERGY AURA ---------- */
+    #core::before,
+    #core::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      z-index: -5;
+      border-radius: 50%;
+    }
+
+    #core::before {
+      inset: -35px;
+      background: radial-gradient(circle, rgba(0, 255, 255, .10) 0%, rgba(0, 255, 255, .035) 42%, transparent 70%);
+      filter: blur(15px);
+      animation: hudAura 2.5s ease-in-out infinite;
+    }
+
+    #core::after {
+      inset: -18px;
+      border: 1px solid rgba(0, 255, 255, .16);
+      box-shadow: 0 0 25px rgba(0, 255, 255, .12), inset 0 0 25px rgba(0, 255, 255, .06);
+      animation: outerRing 4s linear infinite;
+    }
+
+    @keyframes hudAura {
+
+      0%,
+      100% {
+        transform: scale(.9);
+        opacity: .35;
+      }
+
+      50% {
+        transform: scale(1.12);
+        opacity: 1;
+      }
+    }
+
+    @keyframes outerRing {
+      from {
+        transform: rotate(0deg) scale(.96);
+      }
+
+      to {
+        transform: rotate(360deg) scale(1.04);
+      }
+    }
+
+    /* ===== MULTI RING SYSTEM ===== */
+
+    #core .stage::after {
+      content: "";
+      position: absolute;
+      width: 238px;
+      height: 238px;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 247, 255, .18);
+      box-shadow: 0 0 20px rgba(0, 247, 255, .12), inset 0 0 20px rgba(0, 247, 255, .08);
+      animation: quantumRing 8s linear infinite reverse;
+      pointer-events: none;
+    }
+
+    @keyframes quantumRing {
+      from {
+        transform: rotateX(65deg) rotateZ(0deg);
+      }
+
+      to {
+        transform: rotateX(65deg) rotateZ(360deg);
+      }
+    }
+
+    /* ===== PARTICLE FIELD ===== */
+
+    #core .stage {
+      overflow: visible;
+    }
+
+    #core .stage .particle {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: var(--hud);
+      box-shadow: 0 0 8px var(--hud);
+      pointer-events: none;
+      animation: particleFloat var(--duration) linear infinite;
+      opacity: var(--opacity);
+    }
+
+    @keyframes particleFloat {
+      0% {
+        transform: translate3d(var(--x), 90px, 0) scale(.3);
+        opacity: 0;
+      }
+
+      15%,
+      80% {
+        opacity: var(--opacity);
+      }
+
+      100% {
+        transform: translate3d(calc(var(--x) + var(--drift)), -110px, 0) scale(1);
+        opacity: 0;
+      }
+    }
+
+    /* ---------- HOLOGRAPHIC GRID ---------- */
+    #core .stage::before {
+      content: "";
+      position: absolute;
+      inset: 5px;
+      background: linear-gradient(rgba(0, 255, 255, .035) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 255, .035) 1px, transparent 1px);
+      background-size: 12px 12px;
+      mask-image: radial-gradient(circle, black 15%, transparent 72%);
+      -webkit-mask-image: radial-gradient(circle, black 15%, transparent 72%);
+      pointer-events: none;
+      animation: gridMove 5s linear infinite;
+    }
+
+    @keyframes gridMove {
+      from {
+        background-position: 0 0;
+      }
+
+      to {
+        background-position: 24px 24px;
+      }
+    }
+
+    /* =========================================================
+           TIMER
+        ========================================================= */
+    #timerPill {
+      position: absolute;
+      top: -32px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(180deg, rgba(0, 20, 25, .98), rgba(0, 0, 0, .98));
+      color: #fff;
+      border: 2px solid var(--pro-cyan);
+      padding: 5px 12px;
+      border-radius: 30px;
+      font-weight: 900;
+      font-size: 14px;
+      box-shadow: 0 0 20px var(--pro-cyan), inset 0 0 10px var(--pro-cyan);
+      z-index: 200;
+      min-width: 140px;
+      text-align: center;
+      letter-spacing: 1px;
+      font-family: "Courier New", monospace;
+      text-shadow: 0 0 7px currentColor;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    #timerPill::before {
+      content: "";
+      position: absolute;
+      width: 45px;
+      height: 100%;
+      top: 0;
+      left: -70px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .7), transparent);
+      transform: skewX(-20deg);
+      animation: timerShine 2s linear infinite;
+    }
+
+    @keyframes timerShine {
+      from {
+        left: -70px;
+      }
+
+      to {
+        left: 130%;
+      }
+    }
+
+    #panel {
+      display: none;
+    }
+
+    .stage {
+      position: relative;
+      height: 220px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .orbit-container {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      animation: rotateRGB 6s linear infinite, orbitPulse 1.8s ease-in-out infinite;
+      will-change: transform;
+    }
+
+    @keyframes rotateRGB {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes orbitPulse {
+
+      0%,
+      100% {
+        filter: drop-shadow(0 0 5px rgba(0, 255, 255, .25));
+      }
+
+      50% {
+        filter: drop-shadow(0 0 22px rgba(0, 255, 255, .85));
+      }
+    }
+
+    .fireball {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 0 20px currentColor, 0 0 40px currentColor;
+      border: 2px solid #fff;
+      animation: energyNode 1s ease-in-out infinite alternate;
+    }
+
+    .fireball::before {
+      content: "";
+      position: absolute;
+      inset: -8px;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      opacity: .35;
+      animation: nodeRing 1.3s linear infinite;
+    }
+
+    .fireball::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 65px;
+      height: 18px;
+      background: linear-gradient(to left, currentColor, transparent);
+      transform: translateY(-50%) rotate(180deg);
+      transform-origin: left center;
+      border-radius: 50%;
+      opacity: 0.8;
+      box-shadow: 0 0 12px currentColor, 0 0 25px currentColor;
+    }
+
+    @keyframes energyNode {
+      from {
+        transform: scale(.8);
+        filter: brightness(.8);
+      }
+
+      to {
+        transform: scale(1.25);
+        filter: brightness(1.7);
+      }
+    }
+
+    @keyframes nodeRing {
+      from {
+        transform: scale(.65);
+        opacity: .8;
+      }
+
+      to {
+        transform: scale(1.8);
+        opacity: 0;
+      }
+    }
+
+    .triContainer {
+      position: relative;
+      width: 155px;
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: holoFloat 2.8s ease-in-out infinite;
+    }
+
+    /* ===== CENTER CROSSHAIR ===== */
+    .triContainer .crosshair {
+      position: absolute;
+      width: 175px;
+      height: 175px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 5;
+      background: linear-gradient(90deg, transparent 49.5%, rgba(0, 247, 255, .18) 50%, transparent 50.5%),
+        linear-gradient(0deg, transparent 49.5%, rgba(0, 247, 255, .18) 50%, transparent 50.5%);
+      animation: crosshairSpin 15s linear infinite;
+    }
+
+    .crosshair::before,
+    .crosshair::after {
+      content: "";
+      position: absolute;
+      inset: 20px;
+      border: 1px dashed rgba(0, 247, 255, .25);
+      border-radius: 50%;
+    }
+
+    .crosshair::after {
+      inset: 50px;
+      border-style: solid;
+      border-color: rgba(0, 247, 255, .3);
+    }
+
+    @keyframes crosshairSpin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(-360deg);
+      }
+    }
+
+    /* ===== CORNER TARGET MARKS ===== */
+    .hud-corners {
+      position: absolute;
+      inset: -8px;
+      pointer-events: none;
+      z-index: 30;
+    }
+
+    .hud-corners span {
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      border-color: var(--hud);
+      border-style: solid;
+      filter: drop-shadow(0 0 5px var(--hud));
+    }
+
+    .hud-corners .tl {
+      top: 0;
+      left: 0;
+      border-width: 2px 0 0 2px;
+    }
+
+    .hud-corners .tr {
+      top: 0;
+      right: 0;
+      border-width: 2px 2px 0 0;
+    }
+
+    .hud-corners .bl {
+      bottom: 0;
+      left: 0;
+      border-width: 0 0 2px 2px;
+    }
+
+    .hud-corners .br {
+      bottom: 0;
+      right: 0;
+      border-width: 0 2px 2px 0;
+    }
+
+    .triContainer::before {
+      content: "";
+      position: absolute;
+      width: 175px;
+      height: 2px;
+      left: -10px;
+      top: 50%;
+      background: linear-gradient(90deg, transparent, rgba(0, 255, 255, .9), transparent);
+      box-shadow: 0 0 10px #00ffff, 0 0 25px rgba(0, 255, 255, .7);
+      z-index: 20;
+      pointer-events: none;
+      animation: scanner 2.2s ease-in-out infinite;
+    }
+
+    @keyframes scanner {
+      0% {
+        transform: translateY(-65px);
+        opacity: 0;
+      }
+
+      15%,
+      50%,
+      85% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(65px);
+        opacity: 0;
+      }
+    }
+
+    .triContainer::after {
+      content: "◈  ◇  ◈  ◇  ◈";
+      position: absolute;
+      width: 205px;
+      height: 205px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(0, 255, 255, .35);
+      font-size: 8px;
+      letter-spacing: 5px;
+      border: 1px dashed rgba(0, 255, 255, .25);
+      border-radius: 50%;
+      animation: hudRotate 12s linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes hudRotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes holoFloat {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-4px);
+      }
+    }
+
+    .triSVG {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      animation: triangleGlow 1.8s ease-in-out infinite alternate;
+    }
+
+    @keyframes triangleGlow {
+      from {
+        opacity: .72;
+        filter: drop-shadow(0 0 7px rgba(0, 247, 255, .4));
+      }
+
+      to {
+        opacity: 1;
+        filter: drop-shadow(0 0 24px rgba(0, 247, 255, .9));
+      }
+    }
+
+    .content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding-top: 10px;
+      background: radial-gradient(circle at 50% 35%, rgba(0, 255, 255, .10), rgba(0, 0, 0, .92) 65%);
+      border-radius: 20px;
+      width: 125px;
+      height: 125px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--pro-cyan);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      animation: corePulse 2.5s ease-in-out infinite;
+      overflow: hidden;
+    }
+
+    /* ===== DIGITAL SCANLINES ===== */
+    .content::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(0deg, rgba(255, 255, 255, .025) 0px, rgba(255, 255, 255, .025) 1px, transparent 1px, transparent 4px);
+      pointer-events: none;
+      z-index: 25;
+      mix-blend-mode: screen;
+      opacity: .7;
+    }
+
+    /* ===== GLASS REFLECTION ===== */
+    .content::after {
+      content: "";
+      position: absolute;
+      width: 180%;
+      height: 35%;
+      left: -40%;
+      top: -20%;
+      background: linear-gradient(115deg, transparent 35%, rgba(255, 255, 255, .10) 50%, transparent 65%);
+      transform: rotate(-12deg);
+      animation: reflectionSweep 4s ease-in-out infinite;
+      pointer-events: none;
+      z-index: 26;
+    }
+
+    @keyframes reflectionSweep {
+
+      0%,
+      20% {
+        transform: translateX(-40%) rotate(-12deg);
+      }
+
+      70%,
+      100% {
+        transform: translateX(50%) rotate(-12deg);
+      }
+    }
+
+    @keyframes corePulse {
+
+      0%,
+      100% {
+        box-shadow: inset 0 0 18px rgba(0, 255, 255, .12), 0 0 15px rgba(0, 0, 0, 1);
+      }
+
+      50% {
+        box-shadow: inset 0 0 35px rgba(0, 255, 255, .28), 0 0 30px rgba(0, 255, 255, .16);
+      }
+    }
+
+    .brand-tag {
+      font-size: 9px;
+      color: var(--pro-gold);
+      font-weight: 900;
+      margin-bottom: 4px;
+      text-shadow: 0 0 5px var(--pro-gold);
+      text-transform: uppercase;
+    }
+
+    .pred-label {
+      font-size: 11px;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: 2px;
+      opacity: 0.9;
+    }
+
+    .bs {
+      font-size: 22px;
+      font-weight: 1000;
+      line-height: 1;
+      margin: 6px 0;
+      display: block;
+      position: relative;
+      animation: resultFloat 1.6s ease-in-out infinite, resultGlow 1s ease-in-out infinite alternate;
+    }
+
+    /* Ball Image Styling */
+    .ball-icon {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      vertical-align: middle;
+      margin-top: 4px;
+      filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
+    }
+
+    @keyframes resultFloat {
+
+      0%,
+      100% {
+        transform: translateY(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(-4px) scale(1.08);
+      }
+    }
+
+    @keyframes resultGlow {
+      from {
+        filter: drop-shadow(0 0 7px currentColor);
+      }
+
+      to {
+        filter: drop-shadow(0 0 18px currentColor) drop-shadow(0 0 32px currentColor);
+      }
+    }
+
+    .big {
+      color: #00ff6a !important;
+      text-shadow: 0 0 10px #00ff6a, 0 0 25px #00ff6a, 0 0 50px rgba(0, 255, 100, .65) !important;
+    }
+
+    .small {
+      color: #ff1744 !important;
+      text-shadow: 0 0 10px #ff1744, 0 0 25px #ff1744, 0 0 50px rgba(255, 20, 60, .65) !important;
+    }
+
+    .signalFlash {
+      animation: signalFlash .55s ease-out !important;
+    }
+
+    @keyframes signalFlash {
+      0% {
+        transform: scale(.55);
+        filter: brightness(2.5);
+      }
+
+      45% {
+        transform: scale(1.18);
+        filter: brightness(1.8);
+      }
+
+      100% {
+        transform: scale(1);
+        filter: brightness(1);
+      }
+    }
+
+    #login {
+      padding: 25px;
+      border-radius: 20px;
+      background: radial-gradient(circle at 50% 0%, rgba(0, 255, 255, .12), #000 65%);
+      border: 2px solid var(--pro-cyan);
+      box-shadow: 0 0 30px var(--pro-cyan);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      animation: loginHover 3s ease-in-out infinite;
+    }
+
+    #login::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: -5px;
+      background: linear-gradient(90deg, transparent, #00ffff, transparent);
+      box-shadow: 0 0 12px #00ffff, 0 0 30px #00ffff;
+      animation: loginScanner 2.4s linear infinite;
+    }
+
+    @keyframes loginScanner {
+      0% {
+        top: -5px;
+        opacity: 0;
+      }
+
+      15%,
+      85% {
+        opacity: 1;
+      }
+
+      100% {
+        top: 105%;
+        opacity: 0;
+      }
+    }
+
+    @keyframes loginHover {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-3px);
+      }
+    }
+
+    .inp {
+      width: 100%;
+      height: 45px;
+      background: #111;
+      border: 2px solid var(--pro-purple);
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 15px;
+      font-weight: bold;
+      outline: none;
+      box-shadow: inset 0 0 10px var(--pro-purple);
+      transition: .25s ease;
+    }
+
+    .inp:focus {
+      border-color: var(--pro-cyan);
+      box-shadow: inset 0 0 15px rgba(0, 255, 255, .2), 0 0 20px rgba(0, 255, 255, .3);
+      transform: scale(1.02);
+    }
+
+    .btn {
+      width: 100%;
+      height: 45px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(45deg, var(--pro-cyan), var(--pro-purple));
+      color: #fff;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 0 15px var(--pro-purple);
+      position: relative;
+      overflow: hidden;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -120%;
+      width: 70%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .55), transparent);
+      transform: skewX(-25deg);
+      animation: buttonSweep 2.2s linear infinite;
+    }
+
+    @keyframes buttonSweep {
+      0% {
+        left: -120%;
+      }
+
+      55%,
+      100% {
+        left: 140%;
+      }
+    }
+
+    .btn:active {
+      transform: scale(.95);
+    }
+
+    /* =========================================================
+           ⚡ DRAG PERFORMANCE LAYER — only active while dragging
+        ========================================================= */
+
+    #dragShield {
+      position: fixed;
+      inset: 0;
+      z-index: 99998;
+      display: none;
+      background: transparent;
+      touch-action: none;
+    }
+
+    #dragShield.on {
+      display: block;
+    }
+
+    #core.dragging {
+      cursor: grabbing;
+      filter: none !important;
+    }
+
+    #core.dragging .content {
+      -webkit-backdrop-filter: none !important;
+      backdrop-filter: none !important;
+    }
+
+    #core.dragging .particle,
+    #core.dragging .orbit-container,
+    #core.dragging .fireball,
+    #core.dragging .crosshair,
+    #core.dragging .triSVG,
+    #core.dragging .content,
+    #core.dragging .content::after,
+    #core.dragging .stage::before,
+    #core.dragging .stage::after,
+    #core.dragging .triContainer::before,
+    #core.dragging .triContainer::after {
+      animation-play-state: paused !important;
+    }
+  </style>
+  </head>
+
+  <body>
+    <iframe src="https://hgnice.org/#/register?invitationCode=285572246084"></iframe>
+
+    <div id="core">
+      <div class="hud-corners">
+        <span class="tl"></span>
+        <span class="tr"></span>
+        <span class="bl"></span>
+        <span class="br"></span>
+      </div>
+      <div id="timerPill">-- [--]</div>
+
+      <div id="login">
+        <div style="color:var(--pro-cyan); font-size:14px; margin-bottom:12px; font-weight:900;">
+          𖣘 ATIK BHAI 𖣘
+        </div>
+        <input id="key" class="inp" type="password" placeholder="ENTER PRO KEY">
+        <button id="unlockBtn" class="btn">ENTER NOW</button>
+      </div>
+
+      <div id="panel">
+        <div class="stage">
+          <div class="orbit-container">
+            <div class="fireball" style="top: -12px; left: 50%; transform: translateX(-50%); color: var(--pro-red);">
+            </div>
+            <div class="fireball"
+              style="bottom: -12px; left: 50%; transform: translateX(-50%) rotate(180deg); color: var(--pro-cyan);">
+            </div>
+            <div class="fireball"
+              style="left: -12px; top: 50%; transform: translateY(-50%) rotate(-90deg); color: #00ff88;"></div>
+            <div class="fireball"
+              style="right: -12px; top: 50%; transform: translateY(-50%) rotate(90deg); color: #106;"></div>
+          </div>
+          <div class="triContainer" id="triMain">
+            <div class="crosshair"></div>
+            <svg class="triSVG" viewBox="0 0 100 100">
+              <polygon points="50,5 95,95 5,95" fill="rgba(0,0,0,0.9)" stroke="url(#proGrad)" stroke-width="4">
+              </polygon>
+              <defs>
+                <linearGradient id="proGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:var(--pro-cyan)"></stop>
+                  <stop offset="50%" style="stop-color:var(--pro-purple)"></stop>
+                  <stop offset="100%" style="stop-color:var(--pro-red)"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="content">
+              <div class="brand-tag">𖣘 ATIK BHAI 𖣘</div>
+              <div class="pred-label">WINGO 30S</div>
+              <div class="bs small" id="bs">WAIT</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const stage = document.querySelector('.stage');
+        if (stage) {
+          for (let i = 0; i < 15; i++) {
+            const p = document.createElement('div');
+            p.className = 'particle';
+            p.style.setProperty('--x', (Math.random() * 200 - 100) + 'px');
+            p.style.setProperty('--drift', (Math.random() * 40 - 20) + 'px');
+            p.style.setProperty('--duration', (Math.random() * 3 + 2) + 's');
+            p.style.setProperty('--opacity', Math.random() * 0.7 + 0.3);
+            stage.appendChild(p);
+          }
+        }
+      });
+    </script>
+    <script>
+      // ===== BALL IMAGES MAPPING =====
+      const BALL_IMAGES = {
+        0: 'https://i.postimg.cc/Wzrp0gRV/ball-0-053d2b99.png',
+        1: 'https://i.postimg.cc/Qt7ZzDfk/ball-1-12ea01b7.png',
+        2: 'https://i.postimg.cc/zvSZJjZy/ball-2-7d433738.png',
+        3: 'https://i.postimg.cc/7hyr8Rcv/ball-3-a91cceac.png',
+        4: 'https://i.postimg.cc/WbTc5Qgg/ball-4-cad06388.png',
+        5: 'https://i.postimg.cc/28GRM27J/ball-5-8e182f0c.png',
+        6: 'https://i.postimg.cc/c1QNMsgd/ball-6-44a39882.png',
+        7: 'https://i.postimg.cc/2S5RDhH5/ball-7-c8babe29.png',
+        8: 'https://i.postimg.cc/R03k39x5/ball-8-9d781b7c.png',
+        9: 'https://i.postimg.cc/cL5q4CjB/ball-9-19985870.png'
+      };
+
+      /* ==================================================================
+         WINGO 30S — LOSS-LIMITER LOGIC v5 (3+ streak handling)
+         ================================================================== */
+      class Wingo30S {
+        constructor() {
+          this.h = [];
+          this.step = 0;
+          this.pending = null;
+          this.lossStreak = 0;
+          this.winStreak = 0;
+          this._prevPred = null;
+          this._prevTwo = [];
+        }
+
+        _norm(v) {
+          if (typeof v === 'number' && Number.isInteger(v) && v >= 0 && v <= 9)
+            return v >= 5 ? 1 : 0;
+          if (typeof v === 'string') {
+            const t = v.trim().toUpperCase();
+            if (t === 'BIG' || t === 'B') return 1;
+            if (t === 'SMALL' || t === 'S') return 0;
+            if (/^[0-9]$/.test(t)) return +t >= 5 ? 1 : 0;
+          }
+          return null;
+        }
+
+        _streakLen(s) {
+          if (!s.length) return 0;
+          const last = s[s.length - 1];
+          let n = 1;
+          for (let i = s.length - 2; i >= 0 && s[i] === last; i--) n++;
+          return n;
+        }
+
+        _markov(s, order) {
+          const n = s.length;
+          if (n < order + 3) return null;
+          const pat = s.slice(n - order);
+          let c1 = 0,
+            c0 = 0;
+          for (let i = order; i < n; i++) {
+            let ok = true;
+            for (let j = 0; j < order; j++)
+              if (s[i - order + j] !== pat[j]) {
+                ok = false;
+                break;
+              }
+            if (ok) s[i] ? c1++ : c0++;
+          }
+          const tot = c1 + c0;
+          if (tot < 2) return null;
+          const p = (c1 + 1) / (tot + 2);
+          return (p - .5) * 2 * (tot / (tot + 4));
+        }
+
+        _freq(s, n) {
+          const w = s.slice(-n);
+          if (!w.length) return 0;
+          return ((w.reduce((a, b) => a + b, 0) / w.length) - .5) * 2;
+        }
+
+        _flipRate(s, n) {
+          const w = s.slice(-n);
+          if (w.length < 3) return .5;
+          let f = 0;
+          for (let i = 1; i < w.length; i++)
+            if (w[i] !== w[i - 1]) f++;
+          return f / (w.length - 1);
+        }
+
+        predict() {
+          const s = this.h;
+
+          /* ============================================================
+             LOSS LIMITER (layered, aggressive as losses grow)
+             ============================================================ */
+          if (this.lossStreak >= 2 && this._prevPred !== null) {
+            const lastBit = this._prevPred === 'BIG' ? 1 : 0;
+
+            // Level 1: 2 losses → flip from last prediction
+            let targetBit = 1 - lastBit;
+
+            // Level 2: 3 losses → flip from BOTH of last 2 predictions
+            if (this.lossStreak >= 3 && this._prevTwo.length === 2) {
+              if (this._prevTwo[0] === this._prevTwo[1]) {
+                targetBit = 1 - this._prevTwo[1];
+              } else {
+                if (s.length) targetBit = 1 - s[s.length - 1];
+              }
+            }
+
+            // Level 3: 4+ losses → follow recent actual market result
+            if (this.lossStreak >= 4 && s.length >= 3) {
+              const recentActual = s.slice(-3);
+              const sum = recentActual.reduce((a, b) => a + b, 0);
+              targetBit = sum >= 2 ? 1 : 0;
+            }
+
+            const signal = targetBit ? 'BIG' : 'SMALL';
+            this.pending = {
+              signal,
+              step: this.step,
+              forced: this.lossStreak
+            };
+            return {
+              signal,
+              step: this.step,
+              forced: true
+            };
+          }
+
+          /* ---------- warm-up ---------- */
+          if (s.length < 4) {
+            let v;
+            if (!s.length) v = Math.random() < .5 ? 1 : 0;
+            else v = Math.random() < .5 ? s[s.length - 1] : 1 - s[s.length - 1];
+            const signal = v ? 'BIG' : 'SMALL';
+            this.pending = {
+              signal,
+              step: this.step
+            };
+            return {
+              signal,
+              step: this.step
+            };
+          }
+
+          /* ---------- normal multi-layer scoring ---------- */
+          const last = s[s.length - 1];
+          const strk = this._streakLen(s);
+          const m1 = this._markov(s, 1);
+          const m2 = this._markov(s, 2);
+          const fq = this._freq(s, 15);
+          const flip = this._flipRate(s, 20);
+
+          let score = 0,
+            wsum = 0;
+
+          if (m1 !== null) {
+            score += m1 * 0.30;
+            wsum += 0.30;
+          }
+          if (m2 !== null) {
+            score += m2 * 0.22;
+            wsum += 0.22;
+          }
+          score += (-fq) * 0.10;
+          wsum += 0.10;
+
+          if (strk >= 3) {
+            const dir = last === 1 ? -1 : 1;
+            const strength = Math.min((strk - 2) / 4, 1);
+            score += dir * 0.35 * strength;
+            wsum += 0.35;
+          }
+
+          if (flip > 0.62) {
+            score += (last === 1 ? -1 : 1) * 0.15;
+            wsum += 0.15;
+          } else if (flip < 0.38) {
+            score += (last === 1 ? 1 : -1) * 0.15;
+            wsum += 0.15;
+          }
+
+          score = wsum ? score / wsum : 0;
+
+          if (this.step === 1) {
+            if (Math.abs(score) < 0.15) score = -score * 1.2;
+            score += (Math.random() * 2 - 1) * 0.08;
+          } else {
+            score += (Math.random() * 2 - 1) * 0.04;
+          }
+
+          const signal = score >= 0 ? 'BIG' : 'SMALL';
+          this.pending = {
+            signal,
+            step: this.step
+          };
+          return {
+            signal,
+            step: this.step
+          };
+        }
+
+        submitResult(actual) {
+          const norm = this._norm(actual);
+          if (norm === null) throw new Error('Invalid result');
+          if (!this.pending) throw new Error('Predict first');
+
+          const p = this.pending.signal === 'BIG' ? 1 : 0;
+          const win = p === norm;
+
+          if (win) {
+            this.winStreak++;
+            this.lossStreak = 0;
+          } else {
+            this.lossStreak++;
+            this.winStreak = 0;
+          }
+
+          this._prevTwo.push(p);
+          if (this._prevTwo.length > 2) this._prevTwo.shift();
+          this._prevPred = this.pending.signal;
+
+          if (this.pending.step === 0) this.step = win ? 0 : 1;
+          else this.step = 0;
+
+          this.h.push(norm);
+          this.pending = null;
+          return {
+            win,
+            step: this.step,
+            lossStreak: this.lossStreak
+          };
+        }
+      }
+
+      // ==========================================
+      // 🧠 ENGINE INSTANCE + STATE
+      // ==========================================
+      let engine = new Wingo30S();
+      let lastPredictedPeriod = null;
+
+      // API fetch — also exposes raw latest issue globally
+      async function fetchWinGoHistoryFromAPI() {
+        try {
+          let response = await fetch('https://draw.ar-lottery01.com/WinGo/WinGo_30S/GetHistoryIssuePage.json?ts=' +
+            Date.now() + '&r=' + Date.now());
+          if (!response.ok) return [];
+          let data = await response.json();
+
+          if (data?.data?.list?.length > 0) {
+            window.__winGoLatestRaw = data.data.list[0];
+            return data.data.list.slice().reverse().map(item =>
+              parseInt(item.number) >= 5 ? "BIG" : "SMALL"
+            );
+          }
+          return [];
+        } catch (error) {
+          return ["BIG", "SMALL", "BIG", "BIG"];
+        }
+      }
+
+      // Deterministic number derived from period hash + prediction
+      function deriveNumberFromPeriod(periodStr, predictedBS) {
+        let hash = 0;
+        for (let i = 0; i < periodStr.length; i++) {
+          hash = ((hash << 5) - hash) + periodStr.charCodeAt(i);
+          hash |= 0;
+        }
+        let base = Math.abs(hash) % 10;
+
+        if (predictedBS === "BIG") {
+          return (base < 5) ? base + 5 : base;
+        } else {
+          return (base >= 5) ? base - 5 : base;
+        }
+      }
+
+      // ===== PASSWORD CONFIGURATION =====
+      const PRO_KEY = "Atik007";
+
+      const keyInput = document.getElementById('key');
+      const unlockBtn = document.getElementById('unlockBtn');
+      const loginDiv = document.getElementById('login');
+      const panelDiv = document.getElementById('panel');
+      const bsDisplay = document.getElementById('bs');
+      const timerPill = document.getElementById('timerPill');
+
+      let pollInterval = null;
+      let currentPeriodNumber = "WATING";
+      let lastFetchedPeriod = null;
+
+      unlockBtn.addEventListener('click', () => {
+        const enteredKey = keyInput.value.trim();
+
+        if (enteredKey === PRO_KEY) {
+          loginDiv.style.display = 'none';
+          panelDiv.style.display = 'block';
+          startGame();
+        } else {
+          keyInput.style.borderColor = '#ff0000';
+          keyInput.style.boxShadow = 'inset 0 0 10px #ff0000, 0 0 15px #ff0000';
+          alert('❌ ছোট ভাই আগে পাসওয়ার্ড আনো নাহলে সঠিক পাসওয়ার্ড বসাও 🙄.');
+          keyInput.value = '';
+          keyInput.style.borderColor = '';
+          keyInput.style.boxShadow = '';
+        }
+      });
+
+      keyInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          unlockBtn.click();
+        }
+      });
+
+      async function fetchLiveIssue() {
+        try {
+          const response = await fetch('https://draw.ar-lottery01.com/WinGo/WinGo_30S/GetHistoryIssuePage.json?ts=' +
+            Date.now());
+          const data = await response.json();
+
+          let latestIssue = null;
+          if (data && data.data) {
+            if (Array.isArray(data.data) && data.data.length > 0) {
+              latestIssue = data.data[0].issueNumber;
+            } else if (data.data.list && data.data.list.length > 0) {
+              latestIssue = data.data.list[0].issueNumber;
+            }
+          }
+
+          if (latestIssue) {
+            return String(BigInt(latestIssue) + 1n);
+          }
+        } catch (error) {
+          console.log('API Error, using fallback calculation');
+        }
+        return null;
+      }
+
+      async function updateSignal(nextPeriod) {
+        currentPeriodNumber = nextPeriod;
+
+        // 🎯 Fetch fresh history once (also sets window.__winGoLatestRaw)
+        await fetchWinGoHistoryFromAPI();
+        const raw = window.__winGoLatestRaw;
+
+        // 🔍 Evaluate previous prediction vs actual result → feed into engine
+        if (raw && lastPredictedPeriod) {
+          const actualPeriod = raw.issueNumber || raw.issue;
+          const actualResult = parseInt(raw.number) >= 5 ? "BIG" : "SMALL";
+
+          if (String(lastPredictedPeriod) === String(actualPeriod)) {
+            try {
+              engine.submitResult(actualResult);
+            } catch (e) {
+              // no pending prediction — skip
+            }
+          }
+        }
+
+        // 🧠 Get signal from loss-limiter engine
+        const pred = engine.predict();
+        let predictedBS = pred.signal;
+
+        // 🔢 Derive number from period hash (parity matches predictedBS)
+        let luckyNum = deriveNumberFromPeriod(nextPeriod, predictedBS);
+        if (luckyNum >= 5) predictedBS = "BIG";
+        else predictedBS = "SMALL";
+
+        const ballImgUrl = BALL_IMAGES[luckyNum] || '';
+
+        bsDisplay.innerHTML = `${predictedBS} <br><img src="${ballImgUrl}" class="ball-icon" alt="${luckyNum}">`;
+        bsDisplay.className = 'bs';
+        void bsDisplay.offsetWidth;
+        bsDisplay.classList.add(predictedBS === 'BIG' ? 'big' : 'small');
+        bsDisplay.classList.add('signalFlash');
+
+        if (window.quantumResultEffect) {
+          window.quantumResultEffect(predictedBS);
+        }
+
+        setTimeout(() => {
+          bsDisplay.classList.remove('signalFlash');
+        }, 600);
+
+        // 💾 Save prediction for next-cycle evaluation
+        lastPredictedPeriod = nextPeriod;
+      }
+
+      async function checkAndUpdatePeriod() {
+        const nextPeriod = await fetchLiveIssue();
+        if (nextPeriod) {
+          const now = Math.floor(Date.now() / 1000);
+          let timeLeft = 30 - (now % 30);
+
+          if (nextPeriod !== lastFetchedPeriod) {
+            lastFetchedPeriod = nextPeriod;
+            await updateSignal(nextPeriod);
+          }
+
+          timerPill.textContent = `${currentPeriodNumber} [${timeLeft}]`;
+
+          if (window.quantumTimerUpdate) {
+            window.quantumTimerUpdate(timeLeft);
+          }
+
+          if (timeLeft <= 5 && timeLeft > 0) {
+            timerPill.style.color = '#ff1744';
+            timerPill.style.borderColor = '#ff1744';
+            timerPill.style.boxShadow = '0 0 25px #ff1744, inset 0 0 12px #ff1744';
+          } else {
+            timerPill.style.color = '#fff';
+            timerPill.style.borderColor = 'var(--pro-cyan)';
+            timerPill.style.boxShadow = '0 0 20px var(--pro-cyan), inset 0 0 10px var(--pro-cyan)';
+          }
+        }
+      }
+
+      async function startGame() {
+        // 🔄 Reset engine + seed with historical data
+        engine = new Wingo30S();
+        const historyArr = await fetchWinGoHistoryFromAPI();
+        engine.h = historyArr.map(v => v === 'BIG' ? 1 : 0);
+        lastPredictedPeriod = null;
+
+        const initialPeriod = await fetchLiveIssue();
+        if (initialPeriod) {
+          lastFetchedPeriod = initialPeriod;
+          await updateSignal(initialPeriod);
+        } else {
+          currentPeriodNumber = "107228";
+          await updateSignal(currentPeriodNumber);
+        }
+
+        if (pollInterval) clearInterval(pollInterval);
+        pollInterval = setInterval(checkAndUpdatePeriod, 1000);
+      }
+
+      // =========================================================
+      // ⚡ ULTRA-SMOOTH DRAG ENGINE (rAF + GPU translate + shield)
+      // =========================================================
+      (function() {
+        const core = document.getElementById('core');
+        if (!core) return;
+
+        let shield = document.getElementById('dragShield');
+        if (!shield) {
+          shield = document.createElement('div');
+          shield.id = 'dragShield';
+          document.body.appendChild(shield);
+        }
+
+        const SUPPORTS_TRANSLATE = !!(window.CSS && CSS.supports && CSS.supports('translate', '0px 0px'));
+
+        let dragging = false;
+        let pointerId = null;
+        let startX = 0,
+          startY = 0;
+        let baseX = 0,
+          baseY = 0;
+        let curX = 0,
+          curY = 0;
+        let minX = -1e9,
+          maxX = 1e9,
+          minY = -1e9,
+          maxY = 1e9;
+        let raf = null;
+        let leftTopMode = false;
+
+        function paint() {
+          raf = null;
+          if (leftTopMode) {
+            core.style.left = curX + 'px';
+            core.style.top = curY + 'px';
+          } else {
+            core.style.translate = curX + 'px ' + curY + 'px';
+          }
+        }
+
+        function queuePaint() {
+          if (raf === null) raf = requestAnimationFrame(paint);
+        }
+
+        function onDown(e) {
+          if (dragging) return;
+          if (e.pointerType === 'mouse' && e.button !== 0) return;
+          if (e.target && e.target.closest &&
+            e.target.closest('input, button, textarea, select, .inp, .btn')) return;
+
+          dragging = true;
+          pointerId = e.pointerId;
+
+          const rect = core.getBoundingClientRect();
+          const pad = 8;
+
+          if (SUPPORTS_TRANSLATE) {
+            const baseLeft = rect.left - curX;
+            const baseTop = rect.top - curY;
+            minX = pad - baseLeft;
+            maxX = window.innerWidth - baseLeft - rect.width - pad;
+            minY = pad - baseTop;
+            maxY = window.innerHeight - baseTop - rect.height - pad;
+          } else {
+            leftTopMode = true;
+            core.style.right = 'auto';
+            core.style.bottom = 'auto';
+            core.style.left = rect.left + 'px';
+            core.style.top = rect.top + 'px';
+            curX = rect.left;
+            curY = rect.top;
+            minX = pad;
+            maxX = window.innerWidth - rect.width - pad;
+            minY = pad;
+            maxY = window.innerHeight - rect.height - pad;
+          }
+
+          baseX = curX;
+          baseY = curY;
+          startX = e.clientX;
+          startY = e.clientY;
+
+          core.classList.add('dragging');
+          shield.classList.add('on');
+          core.style.willChange = 'translate';
+
+          if (core.setPointerCapture) {
+            try {
+              core.setPointerCapture(e.pointerId);
+            } catch (err) {}
+          }
+          e.preventDefault();
+        }
+
+        function onMove(e) {
+          if (!dragging || e.pointerId !== pointerId) return;
+
+          let nx = baseX + (e.clientX - startX);
+          let ny = baseY + (e.clientY - startY);
+
+          if (nx < minX) nx = minX;
+          else if (nx > maxX) nx = maxX;
+          if (ny < minY) ny = minY;
+          else if (ny > maxY) ny = maxY;
+
+          curX = nx;
+          curY = ny;
+          queuePaint();
+          e.preventDefault();
+        }
+
+        function onUp(e) {
+          if (!dragging) return;
+          if (e && e.pointerId !== undefined && e.pointerId !== pointerId) return;
+
+          dragging = false;
+          pointerId = null;
+          core.classList.remove('dragging');
+          shield.classList.remove('on');
+
+          if (raf !== null) {
+            cancelAnimationFrame(raf);
+            raf = null;
+          }
+          paint();
+
+          setTimeout(function() {
+            if (!dragging) core.style.willChange = '';
+          }, 400);
+        }
+
+        if (window.PointerEvent) {
+          core.addEventListener('pointerdown', onDown, {
+            passive: false
+          });
+          core.addEventListener('pointermove', onMove, {
+            passive: false
+          });
+          core.addEventListener('pointerup', onUp);
+          core.addEventListener('pointercancel', onUp);
+          document.addEventListener('pointermove', onMove, {
+            passive: false
+          });
+          document.addEventListener('pointerup', onUp);
+          document.addEventListener('pointercancel', onUp);
+        } else {
+          core.addEventListener('mousedown', function(e) {
+            onDown({
+              pointerId: 1,
+              pointerType: 'mouse',
+              button: e.button,
+              clientX: e.clientX,
+              clientY: e.clientY,
+              target: e.target,
+              preventDefault: function() {
+                e.preventDefault();
+              }
+            });
+          });
+          document.addEventListener('mousemove', function(e) {
+            onMove({
+              pointerId: 1,
+              clientX: e.clientX,
+              clientY: e.clientY,
+              preventDefault: function() {
+                e.preventDefault();
+              }
+            });
+          });
+          document.addEventListener('mouseup', function() {
+            onUp({
+              pointerId: 1
+            });
+          });
+
+          core.addEventListener('touchstart', function(e) {
+            var t = e.touches[0];
+            onDown({
+              pointerId: t.identifier,
+              pointerType: 'touch',
+              button: 0,
+              clientX: t.clientX,
+              clientY: t.clientY,
+              target: e.target,
+              preventDefault: function() {
+                e.preventDefault();
+              }
+            });
+          }, {
+            passive: false
+          });
+          document.addEventListener('touchmove', function(e) {
+            var t = e.touches[0];
+            if (!t) return;
+            onMove({
+              pointerId: t.identifier,
+              clientX: t.clientX,
+              clientY: t.clientY,
+              preventDefault: function() {
+                e.preventDefault();
+              }
+            });
+          }, {
+            passive: false
+          });
+          document.addEventListener('touchend', function(e) {
+            var t = e.changedTouches && e.changedTouches[0];
+            onUp({
+              pointerId: t ? t.identifier : undefined
+            });
+          });
+        }
+      })();
+    </script>
+  </body>
+
+</html>
